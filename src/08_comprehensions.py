@@ -11,6 +11,8 @@ for more info regarding list comprehensions.
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
 y = []
+for i in range(1, 6, 1):
+    y.append(i)
 
 print (y)
 
@@ -18,6 +20,8 @@ print (y)
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
 y = []
+for i in range (9):
+    y.append(i**3)
 
 print(y)
 
@@ -25,8 +29,9 @@ print(y)
 # elements in array a. Hint: "foo".upper() is "FOO".
 
 a = ["foo", "bar", "baz"]
-
 y = []
+for i in a:
+    y.append(i.upper())
 
 print(y)
 
@@ -37,5 +42,7 @@ x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
 y = []
+for i in x:
+    y.append(int(i))
 
 print(y)
